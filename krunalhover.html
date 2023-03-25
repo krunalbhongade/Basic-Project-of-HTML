@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        width: 100vw;
+        min-height: 100vh;
+        background-color: #070225;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .container .box {
+        position: relative;
+        width: 20rem;
+        height: 20rem;
+        margin: 3rem;
+      }
+      .container .box:hover .imgBox {
+        transform: translate(-1.5rem, -1.5rem);
+      }
+      .container .box:hover .content {
+        transform: translate(3.5rem, 3.5rem);
+      }
+      .imgBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .imgBox img {
+        width: 20rem;
+        height: 20rem;
+        object-fit: cover;
+        resize: both;
+      }
+      
+      .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        z-index: 1;
+        align-items: flex-end;
+        text-align: center;
+        transition: 0.5s ease-in-out;
+      }
+      
+      .content h2 {
+        display: block;
+        font-size: 2rem;
+        color: #111;
+        font-weight: 500;
+        line-height: 2rem;
+        letter-spacing: 1px;
+      }
+      
+      .content span {
+        color: #555;
+        font-size: 1.4rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+      }
+      
+      @media (max-width: 600px) {
+        .container .box:hover .content {
+          transform: translate(0, 3.5rem);
+        }
+        .container .box:hover .imgBox {
+          transform: translate(0, -3.5rem);
+        }
+    }
+/*# sourceMappingURL=main.css.map */
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+          <div class="imgBox">
+            <img
+              src="https://scontent.fpnq7-3.fna.fbcdn.net/v/t39.30808-6/285438417_5145433325549732_3655248684632275858_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=pEClCmkiil0AX80HxQF&_nc_ht=scontent.fpnq7-3.fna&oh=00_AfAhBpTAuX3OyQTD71N6SaCCTbYuJZdzUMfM8Eq8EXd14g&oe=64230E09"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h2>
+              Krunal Bhongade<br />
+              <span>Software Engineer</span>
+            </h2>
+          </div>
+        </div>
+  
+        
+         
+    </body>
+  </html>
+</body>
+</html>
